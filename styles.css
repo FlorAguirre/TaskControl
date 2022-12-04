@@ -551,9 +551,13 @@ label {
 @media screen and (min-width: 1281px) and (max-width: 1600px) {
 
     #Formulario2{
-        margin-top: -300px;
+        margin-top: -400px;
         height: 510px;
         margin-left: 400px;
+    }
+
+    #Formulario{
+        margin-top: -400px;
     }
 
     .submit {
