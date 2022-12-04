@@ -27,15 +27,22 @@
         </nav>
     </header>
 
-    <!--
+    
     <div class ="botones">
-        <button class="boton">Formulario de Registro</button>
-        <button class="boton">Formulario de Tareas</button>
+        <button class="boton" onClick="mostrarFormulario()">Formulario de Registro</button>
+        <button class="boton" onClick="mostrarFormulario()">Formulario de Tareas</button>
     </div>
-    -->
-    <!--
-    <form>
-        <fieldset>Formulario de Registro</fieldset>
+    
+    
+    <form id="Formulario" style="display:none;" >
+        <div class="fieldset">
+        <fieldset class="tituloFieldset2">Formulario de Registro</fieldset>
+        <svg xmlns="http://www.w3.org/2000/svg" class=" iconoFieldset icon icon-tabler icon-tabler-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" onClick="ocultarFormulario()">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
         <hr>
 
         <div class="nombreApellido">
@@ -68,12 +75,12 @@
             <button class="botonSubmit">Submit</button>
         </div>
     </form>
-    -->
+    
 
-    <form>
+    <form id="Formulario2" style="display: none;">
         <div class="fieldset">
         <fieldset class="tituloFieldset">Formulario de Tareas</fieldset>
-        <svg xmlns="http://www.w3.org/2000/svg" class=" iconoFieldset icon icon-tabler icon-tabler-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class=" iconoFieldset icon icon-tabler icon-tabler-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round" onClick="ocultarFormulario2()">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
@@ -119,6 +126,8 @@
             <button class="botonSubmit">Submit</button>
         </div>
     </form>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
