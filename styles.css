@@ -265,19 +265,34 @@ label {
 }
 
 @media (max-width:1600px) {
+
+    #Formulario{
+        margin-top: -300px;
+        height: 460px;
+    }
+
     form {
-        margin-top: -260px;
+        margin-top: -300px;
         margin-left: 25%;
         margin-right: 25%;
+        height: 520px;
     }
+
+
 }
 
-@media(max-width:1280px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    #Formulario{
+        margin-top: -300px;
+        height: 460px;
+    }
     form {
-        margin-top: -260px;
+     
         margin-left: 20%;
         margin-right: 20%;
         padding-right: 10px;
+        height: 510px;
     }
 
     .texto {
@@ -384,6 +399,7 @@ label {
     form {
         margin-left: 90px;
         width: 600px;
+        
     }
 
     .tituloFieldset2{
@@ -493,6 +509,13 @@ label {
         margin-left: 20px;
         margin-top: 20px;
     }
+
+    #Formulario2{
+        height: 860px;
+    }
+    #Formulario{
+        height: 710px;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
@@ -513,6 +536,31 @@ label {
     .input{
         margin-top: 10px;
     }
+
+    #Formulario2{
+        height: 570px;
+    }
+
+    #Formulario{
+        height: 500px;
+    }
+
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1600px) {
+
+    #Formulario2{
+        margin-top: -300px;
+        height: 510px;
+        margin-left: 400px;
+    }
+
+    .submit {
+        margin-top: 20px;
+        margin-left: 600px;
+    }
+   
 
 
 }
