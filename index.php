@@ -34,7 +34,7 @@
     </div>
 
 
-    <form id="Formulario" style="display:none;">
+    <form id="Formulario" action="" method="POST" style="display:none;">
         <div class="fieldset">
             <fieldset class="tituloFieldset2">Formulario de Registro</fieldset>
             <svg xmlns="http://www.w3.org/2000/svg" class=" iconoFieldset icon icon-tabler icon-tabler-x" width="32"
@@ -50,36 +50,36 @@
         <div class="nombreApellido">
             <div class="nombre">
                 <label for="" class="nombreLabel">Nombre</label>
-                <input class="nombreInput"type=" text">
+                <input class="nombreInput" type="text" name='name' autocomplete="off" required>
             </div>
             <div class="apellido">
                 <label for="" class="apellidoLabel"">Apellido</label>
-            <input class="nombreInput" type=" text">
+            <input class="nombreInput" type=" text" name='apellido' autocomplete="off" required>
             </div>
         </div>
 
         <div class="opciones">
             <label for="" class="especialidad">Especialidad</label>
-            <select name="" id="" class="select">
+            <select name="especialidad" id="" class="select">
                 <option value="" class="option">-- Seleccionar --</option>
-                <option value="">Front-End</option>
-                <option value="">Back-End</option>
-                <option value="">Full-Stack</option>
+                <option name="especialidad" value="Front-End">Front-End</option>
+                <option name="especialidad" value="Back-End">Back-End</option>
+                <option name="especialidad" value="Full-Stack">Full-Stack</option>
             </select>
         </div>
 
         <div class="comentarios">
             <label for="" class="comentariosLabel">Comentarios - Habilidades</label>
-            <textarea class="texto" name="" id="" cols="40" rows="10"></textarea>
+            <textarea class="texto" name="comentarios" id="" cols="40" rows="10" autocomplete="off" required></textarea>
         </div>
 
         <div class="submit">
-            <button class="botonSubmit">Submit</button>
+            <input type="submit" name='registrar' class="botonSubmit">Submit
         </div>
     </form>
+  
 
-
-    <form id="Formulario2" style="display: none;">
+    <form id="Formulario2" action="" method="post" style="display: none;">
         <div class="fieldset">
             <fieldset class="tituloFieldset">Formulario de Tareas</fieldset>
             <svg xmlns="http://www.w3.org/2000/svg" class=" iconoFieldset icon icon-tabler icon-tabler-x" width="32"
@@ -96,42 +96,47 @@
         <div class="nombreApellido">
             <div class="nombre">
                 <label for="" class="nombreLabel">Nombre</label>
-                <input class ="input" type=" text">
+                <input class ="input" type=" text" name="name">
             </div>
             <div class="apellido">
                 <label for="" class="apellidoLabel"">Apellido</label>
-            <input class ="input" type=" text">
+            <input class ="input" type=" text" name="apellido">
             </div>
         </div>
 
         <div class="proyectoTarea">
             <div class="tarea">
                 <label for="" class="nombreLabel tareaLabel">Tarea</label>
-        <input class ="tareaInput" type=" text">
+        <input class ="tareaInput" type=" text" name="tarea">
             </div>
             <div class="proyecto">
                 <label for="" class="apellidoLabel"">Proyecto</label>
-        <input class ="input" type=" text">
+        <input class ="input" type=" text" name="proyecto">
             </div>
         </div>
         <div class="date">
             <label for="" class="dateLabel">Tiempo de Entrega</label>
-            <input class="dateInput" type="date">
+            <input class="dateInput" type="date" name="tiempo_de_entrega">
         </div>
 
 
 
         <div class="comentarios">
             <label for="" class="comentariosLabel">Comentarios</label>
-            <textarea class="texto" name="" id="" cols="40" rows="10"></textarea>
+            <textarea class="texto" name="comentarios" id="" cols="40" rows="10"></textarea>
         </div>
 
         <div class="submit">
-            <button class="botonSubmit">Submit</button>
+            <input type="submit" name='registrar1' class="botonSubmit">Submit
         </div>
     </form>
 
+     <?php
+    include("registrar.php");
+    ?>
+
     <script src="./script.js"></script>
+   
 </body>
 
 </html>
