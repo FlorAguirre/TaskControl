@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <title>TaskControl</title>
 </head>
+
 <body>
+    <header>
+        <div class="header">
+            <h1>TaskControl</h1>
+        </div>
+        <nav class='nav'>
+            <ul>
+                <li>Home</li>
+                <li>Programmers</li>
+                <li>Proyects</li>
+                <li>Task</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+    <div class ="botones">
+        <button class="boton">Formulario de Registro</button>
+        <button class="boton">Formulario de Tareas</button>
+    </div>
+    -->
+    <!--
+    <form>
+        <fieldset>Formulario de Registro</fieldset>
+        <hr>
+
+        <div class="nombreApellido">
+            <div class="nombre">
+                <label for="" class="nombreLabel">Nombre</label>
+                <input type=" text">
+            </div>
+            <div class="apellido">
+                <label for="" class="apellidoLabel"">Apellido</label>
+            <input type=" text">
+            </div>
+        </div>
+
+        <div class="opciones">
+            <label for="" class="nombreLabel">Especialidad</label>
+            <select name="" id="" class="select">
+                <option value="" class="option">-- Seleccionar --</option>
+                <option value="">Front-End</option>
+                <option value="">Back-End</option>
+                <option value="">Full-Stack</option>
+            </select>
+        </div>
+
+        <div class="comentarios">
+            <label for="" class="comentariosLabel">Comentarios - Habilidades</label>
+            <textarea class="texto" name="" id="" cols="40" rows="10"></textarea>
+        </div>
+
+        <div class="submit">
+            <button class="botonSubmit">Submit</button>
+        </div>
+    </form>
+    -->
+
+    <form>
+        <div class="fieldset">
+        <fieldset class="tituloFieldset">Formulario de Tareas</fieldset>
+        <svg xmlns="http://www.w3.org/2000/svg" class=" iconoFieldset icon icon-tabler icon-tabler-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+        <hr>
     
+
+        <div class="nombreApellido">
+            <div class="nombre">
+                <label for="" class="nombreLabel">Nombre</label>
+                <input type=" text">
+            </div>
+            <div class="apellido">
+                <label for="" class="apellidoLabel"">Apellido</label>
+            <input type=" text">
+            </div>
+        </div>
+
+        <div class="proyectoTarea">
+            <div class="tarea">
+                <label for="" class="nombreLabel"">Tarea</label>
+        <input type=" text">
+            </div>
+            <div class="proyecto">
+                <label for="" class="apellidoLabel"">Proyecto</label>
+        <input type=" text">
+            </div>
+        </div>
+            <div class="date">
+                <label for="">Tiempo de Entrega</label>
+                <input type="date">
+            </div>
+       
+
+
+        <div class="comentarios">
+            <label for="" class="comentariosLabel">Comentarios</label>
+            <textarea class="texto" name="" id="" cols="40" rows="10"></textarea>
+        </div>
+
+        <div class="submit">
+            <button class="botonSubmit">Submit</button>
+        </div>
+    </form>
 </body>
+
 </html>
