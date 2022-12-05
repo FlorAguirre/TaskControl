@@ -30,7 +30,8 @@ $usuarios = "SELECT * FROM datos";
     </header>
 
     <div class='container-table'>
-        <div class="table__title">Datos de usuario <a href="../edicion.php"></a></div>
+        
+        <div class="table__title">Datos de usuario <a href="../edicion.php"  class="titleEditar">Edición</a></div>
         <div class="table__header">Nombre</div>
         <div class="table__header">Apellido</div>
         <div class="table__header">Especialidades </div>
